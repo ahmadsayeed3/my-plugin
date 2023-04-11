@@ -48,8 +48,6 @@ public class MyPlugin extends AbstractMojo {
                 .filter(d -> (scope == null || scope.isEmpty()) || scope.equals(d.getScope()))
                 .count();
         getLog().info("Number of dependencies: " + numDependencies);
-
-        DTOGenerator.dtoGenerator(name, null);
     }
 
 }
